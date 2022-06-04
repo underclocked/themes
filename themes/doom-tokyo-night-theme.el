@@ -57,8 +57,15 @@
   ; "#1a1b26" "#1a1b26" => Editor background (Night)
 
   ;; name        default   256       16
-  ((bg         '((if doom-tokyo-night-storm "24283b" "#1a1b26") nil       nil            ))
-   (bg-alt     '((if doom-tokyo-night-storm "1b1d24" "#13141c") nil       nil            ))
+  ;;
+  ;;
+  storm-bg     '("#24283b" nil nil)
+  storm-bg-alt '("#1b1d24" nil nil)
+  night-bg     '("#1a1b26" nil nil)
+  night-bg-alt '("#13141c" nil nil)
+
+  ((bg         '((if doom-tokyo-night-storm "#24283b" "#1a1b26") nil       nil            ))
+   (bg-alt     '((if doom-tokyo-night-storm "#1b1d24" "#13141c") nil       nil            ))
    (base0      '("#414868" "#414868" "black"        ))
    (base1      '("#51587a" "#51587a" "brightblack"  ))
    (base2      '("#61698b" "#61698b" "brightblack"  ))
